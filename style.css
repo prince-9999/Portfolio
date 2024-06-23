@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
-    
+    /* width: 100vw; */
 }
 
 .cursor{
@@ -31,8 +31,12 @@
     text-decoration: none;
     color: black;
     padding-top: 1.9rem;
-    font-weight: 450;
+    font-weight: 550;
     margin-left: 2.8rem;
+}
+.nav:hover{
+    transform: scale(1.05);
+    font-weight: bolder;
 }
 .navcontent{
     display: flex;
@@ -317,7 +321,7 @@
     position: absolute;
 }
 
-#Project{
+#Projects{
     display: flex;
     justify-content: center;
     align-items: center;

@@ -21,7 +21,7 @@ document.addEventListener("scroll", fillwidth);
 nav.forEach(element => {
     element.addEventListener("click",(event)=>{
         
-        event.preventDefault();
+        //event.preventDefault();
         let ele=document.getElementById(element.innerHTML);
         let interval=setInterval(()=>{
             let length=ele.getBoundingClientRect();
@@ -36,9 +36,13 @@ nav.forEach(element => {
                 clearInterval(interval);
                 return;
             }
+          //   else if(element.innerHTML==="Project" && length.top<=100){
+          //     clearInterval(interval);
+          //     return;
+          // }
 
-            window.scrollBy(0,50);
-        },35);
+            window.scrollBy(0,10);
+        },5);
     })
 });
 let slideIndex = 1;
